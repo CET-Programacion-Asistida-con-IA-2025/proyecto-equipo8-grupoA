@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JovenLab - Portal de Pasantías y Empleos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>JovenLab</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#empleos" class="nav-link">Empleos</a></li>
+                    <li><a href="#pasantias" class="nav-link">Pasantías</a></li>
+                    <li><a href="#empresas" class="nav-link">Empresas</a></li>
+                    <li><a href="#perfil" class="nav-link">Mi Perfil</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-secondary">Iniciar Sesión</button>
+                    <button class="btn-primary">Registrarse</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Encuentra tu próxima <span class="gradient-text">oportunidad</span></h1>
+                <p>Conectamos talento con las mejores empresas. Descubre pasantías y empleos que impulsen tu carrera profesional.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary btn-large">Explorar Empleos</button>
+                    <button class="btn-outline btn-large">Ver Pasantías</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-avatar"></div>
+                        <div class="card-info">
+                            <h4>María González</h4>
+                            <p>Desarrolladora Frontend</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>"Encontré mi trabajo ideal gracias a JovenLab"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="¿Qué trabajo estás buscando?" id="searchInput">
+                </div>
+                <div class="location-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Ubicación" id="locationInput">
+                </div>
+                <button class="btn-primary search-btn">Buscar</button>
+            </div>
+            <div class="search-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="full-time">Tiempo completo</button>
+                <button class="filter-btn" data-filter="part-time">Medio tiempo</button>
+                <button class="filter-btn" data-filter="internship">Pasantías</button>
+                <button class="filter-btn" data-filter="remote">Remoto</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs-section" id="empleos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Oportunidades Destacadas</h2>
+                <p>Las mejores ofertas laborales actualizadas diariamente</p>
+            </div>
+            <div class="jobs-grid" id="jobsGrid">
+                <!-- Los trabajos se cargarán dinámicamente con JavaScript -->
+            </div>
+            <div class="load-more">
+                <button class="btn-outline" id="loadMoreBtn">Ver más empleos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section class="companies-section" id="empresas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Empresas que confían en nosotros</h2>
+                <p>Únete a miles de profesionales que han encontrado su lugar</p>
+            </div>
+            <div class="companies-grid">
+                <div class="company-card">
+                    <div class="company-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h4>Google</h4>
+                    <p>15 posiciones abiertas</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h4>Microsoft</h4>
+                    <p>8 posiciones abiertas</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">
+                        <i class="fab fa-amazon"></i>
+                    </div>
+                    <h4>Amazon</h4>
+                    <p>23 posiciones abiertas</p>
+                </div>
+                <div class="company-card">
+                    <div class="company-logo">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h4>Apple</h4>
+                    <p>12 posiciones abiertas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">Empleos publicados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5,000+</div>
+                    <div class="stat-label">Empresas registradas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Candidatos activos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Tasa de éxito</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para dar el siguiente paso?</h2>
+                <p>Únete a nuestra comunidad y descubre oportunidades que cambiarán tu carrera</p>
+                <div class="cta-actions">
+                    <button class="btn-primary btn-large">Crear cuenta gratuita</button>
+                    <button class="btn-outline btn-large">Subir CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JovenLab</h3>
+                    <p>Conectando talento con oportunidades desde 2024</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Candidatos</h4>
+                    <ul>
+                        <li><a href="#">Buscar empleos</a></li>
+                        <li><a href="#">Crear perfil</a></li>
+                        <li><a href="#">Subir CV</a></li>
+                        <li><a href="#">Consejos de carrera</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Para Empresas</h4>
+                    <ul>
+                        <li><a href="#">Publicar empleo</a></li>
+                        <li><a href="#">Buscar candidatos</a></li>
+                        <li><a href="#">Planes y precios</a></li>
+                        <li><a href="#">Recursos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Centro de ayuda</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JovenLab. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
