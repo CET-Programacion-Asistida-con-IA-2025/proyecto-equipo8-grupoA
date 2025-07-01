@@ -1,33 +1,65 @@
 ## Grupo A - Equipo 8
-_Curso de Programación Asistida con IA - Chicas en Tecnología_ 🚀
+# JovenLab - Portal de Pasantías y Empleos
 
-En este repositorio, se presenta el sitio web realizado durante el curso de programación frontend de CET.
+## 📌 Definición de la problemática
 
-### 📄 Entregas
-**Entrega #1**: planificación de la solución y primeros resultados que obtengamos con la IA:
+En muchos países de América Latina, especialmente entre los jóvenes, existe una brecha significativa entre quienes buscan insertarse en el mercado laboral y las oportunidades reales de empleo o pasantías. Esta desconexión se debe a diversos factores, entre ellos: falta de experiencia previa, escasa visibilidad de vacantes relevantes, dificultades para conectar con empresas y ausencia de plataformas accesibles que centralicen esta información.
 
-📝 Edición del Archivo README incluyendo:
-- Definición de la problemática que eligieron abordar
-- Relación con los *Objetivos de Desarrollo Sostenible (ODS)*[^1]
-- Explicación de la solución tecnológica que están desarrollando
-> [!TIP]
-> Aprovechen los [formatos del README](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) para escribir diferentes secciones
+**JovenLab** surge como respuesta a esta problemática, ofreciendo una plataforma digital diseñada específicamente para conectar a jóvenes talentos con empresas que buscan incorporar nuevos perfiles, ya sea en modalidad de pasantías o empleos.
 
-🎨 Moodboard
+---
 
-🧩 Archivos generados con asistencia de IA: ```index.html```, ```style.css```, ```script.js```
+## 🎯 Relación con los Objetivos de Desarrollo Sostenible (ODS)
 
+El proyecto JovenLab se alinea especialmente con los siguientes ODS de la Agenda 2030:
 
-**Entrega #2 (Final)**: se esperan modificaciones en el código respecto a la entrega anterior, que pueden incluir nuevos archivos o extensión de los existentes (debe haber al menos un archivo de cada lenguaje visto - HTML, CSS y Javascript)
+- **ODS 4: Educación de Calidad**  
+  Facilita el acceso a pasantías como complemento formativo, brindando a estudiantes y recién graduados una experiencia práctica valiosa.
 
-💡 Es una buena idea llevar un registro de lo que cambiamos. Por ejemplo
-```
-- Agregamos Bootstrap para el carrousel de imágenes...
-- Modificamos el texto de la sección de bienvenida...
-- Transformamos los textos sobre redes sociales en links...
-```
+- **ODS 8: Trabajo Decente y Crecimiento Económico**  
+  Promueve el acceso equitativo al empleo para jóvenes, mejorando sus oportunidades laborales y apoyando el desarrollo económico sostenible.
 
-Ahora si, ¡A programar! 🚀
+- **ODS 10: Reducción de las Desigualdades**  
+  La plataforma permite la inclusión de perfiles de distintas regiones, promoviendo la equidad en el acceso a oportunidades sin importar el lugar de residencia.
 
+---
 
-[^1]: Los Objetivos de Desarrollo Sostenible u Objetivos Globales, también conocidos como Agenda 2030, son 17 objetivos globales interconectados diseñados para ser un «plan para lograr un futuro mejor y más sostenible para todos». Más información en https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
+## 💡 Explicación de la solución tecnológica
+
+JovenLab es una **plataforma web interactiva** que ofrece un portal centralizado donde los usuarios pueden:
+
+- Buscar empleos y pasantías filtrando por ubicación, modalidad y tipo de jornada.
+- Crear un perfil profesional y subir su CV.
+- Guardar ofertas de interés y aplicar directamente desde la interfaz.
+- Visualizar empresas asociadas y oportunidades destacadas.
+
+### Principales componentes técnicos:
+
+- **Frontend (HTML, CSS, JS):**
+  - Diseño moderno, responsivo y atractivo con estilos definidos en `styles.css`.
+  - Interacciones dinámicas implementadas con JavaScript: filtrado de ofertas, guardado de empleos, búsquedas por palabra clave y ubicación, animaciones, entre otras funcionalidades.
+
+- **Componentes dinámicos:**
+  - Simulación de base de datos local para mostrar empleos.
+  - Carga incremental de vacantes y filtros por tipo (`Tiempo completo`, `Medio tiempo`, `Pasantías`, `Remoto`).
+  - Uso de localStorage para guardar empleos seleccionados.
+
+- **Diseño UX/UI centrado en la experiencia juvenil:**
+  - Navegación clara.
+  - Compatibilidad móvil.
+  - Estética moderna y accesible.
+
+Este prototipo sienta las bases para una futura implementación con back-end y funcionalidades ampliadas como autenticación, postulaciones reales, y gestión empresarial de vacantes.
+
+---
+
+## 🚀 Próximos pasos
+
+- Integrar un sistema de autenticación y perfil de usuario.
+- Incorporar una base de datos real y conexión con backend.
+- Establecer convenios con universidades y empresas.
+- Medir impacto en la empleabilidad juvenil.
+
+---
+
+**JovenLab** busca ser más que una plataforma de búsqueda: pretende convertirse en un puente real y efectivo entre la juventud y el mundo laboral.
